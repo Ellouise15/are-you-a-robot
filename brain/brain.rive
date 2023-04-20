@@ -11,6 +11,9 @@
 - Nice to meet you <star>
 - Nice meeting you <star>
 
++ are you okay
+- yeah im fine
+
 + thank you
 - You are welcome
 - Welcome
@@ -22,3 +25,23 @@
 - I am afraid that I can not understand you
 - Sorry can you please elaborate that for me
 - I don't get it!
+
++ i hate you
+- You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
+> topic sorry
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] sorry [*]
+  - It's OK, I'll forgive you!{topic=random}
+
+  + *
+  - Nope, not until you apologize.
+  - Say you're sorry!
+  - Apologize!
+
+< topic
+
++ yay
+- Im happy your happy
+
